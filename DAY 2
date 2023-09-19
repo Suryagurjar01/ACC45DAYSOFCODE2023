@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+     int t;
+     cin>>t;
+     while(t--)
+     {  
+         int X,Y,Z;
+         cout<<"enter the number of 5 rupees coins,10 rupees coins and cost of each chocolate:";
+         cin>>X>>Y>>Z;
+         
+         int total=(5*X)+(10*Y);
+         cout<<"maximumy number of chocolates that chef can buy is :"<<total/Z<<endl;
+     }
+     return 0;
+}
