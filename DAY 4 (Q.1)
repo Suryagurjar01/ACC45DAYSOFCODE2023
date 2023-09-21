@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int x,y,total=100,count;
+        cin>>x>>y;
+        if(x&&y>total)
+        {
+            cout<<"store has only hundered chocolates";
+        }
+        else if(x>=y)
+        cout<<y<<endl;
+        else
+        {
+        int amt=x*1+(y-x)*2;
+        cout<<amt<<endl;
+        }
+    }
+    return 0;
+}
