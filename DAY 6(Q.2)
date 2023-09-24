@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ int t;
+ cin>>t;
+ while(t--)
+ {
+    int Pa,Pb,Pc;
+    cin>>Pa>>Pb>>Pc;
+    int maxp=Pb;
+    maxp = max(maxp,Pa+Pc);
+    maxp = max(maxp,Pc+min(Pb,Pa));
+    maxp = max(maxp,Pa+min(Pb,Pc));
+    cout<<maxp<<endl;
+ }
+    return 0;
+}
