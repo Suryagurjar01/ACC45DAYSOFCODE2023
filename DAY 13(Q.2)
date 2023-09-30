@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    long int n,a,b,odd_pair;
+	    cin>>n;
+	    a=n/2;
+	    b=n-a;
+	    if(a>=1&&b<=n)
+	    {
+	    odd_pair=a*b*2;
+	    cout<<odd_pair<<endl;
+	    }
+	    else
+	    cout<<0<<endl;
+	}
+	return 0;
+}
