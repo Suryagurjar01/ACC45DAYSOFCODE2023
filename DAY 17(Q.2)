@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	 int t;
+	 cin>>t;
+	 while(t--)
+	 {
+	     int n,a=0,i,o=0,maddy=0,mom=0;
+	     cin>>n;
+	     int om[n],addy[n];
+	     for(i=0;i<n;i++)
+	     {
+	             cin>>om[i];
+	     }
+	      for(i=0;i<n;i++)
+	     {
+	             cin>>addy[i];
+	     }
+	     for(i=0;i<n;i++)
+	     {
+	         
+	             if(om[i]>0){
+	             o=o+1;
+	             mom=max(mom,o);
+	             }
+	             else
+	             o=0;
+	             
+	             if(addy[i]>0){
+	             a=a+1;
+	             maddy=max(maddy,a);
+	             }
+	             else
+	             a=0;
+	     }
+	     if(maddy>mom)
+	     {
+	     cout<<"Addy"<<endl;
+	     }
+	     else if(maddy<mom)
+	     {
+	         cout<<"Om"<<endl;
+	     }
+	     else
+	     {
+	         cout<<"Draw"<<endl;
+	      }
+	 }
+	return 0;
+}
