@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int Pa,Pb,Qa,Qb,p,q;
+	    cin>>Pa>>Pb>>Qa>>Qb;
+	    p=max(Pa,Pb);
+	    q=max(Qa,Qb);
+	    
+	    if(p<q)
+	    cout<<"P"<<endl;
+	    else if(p>q)
+	    cout<<"Q"<<endl;
+	    else
+	    cout<<"TIE"<<endl;
+	}
+	return 0;
+}
